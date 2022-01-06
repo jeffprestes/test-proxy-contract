@@ -1,0 +1,316 @@
+{
+  "version": "3.2",
+  "log": [
+    {
+      "BoxV2": {
+        "src": "contracts/boxv2.sol:5",
+        "version": {
+          "withMetadata": "96cb49844e926520ae519573484734d7e746b64e0ed6bcfa23edf5b0632d382e",
+          "withoutMetadata": "de02d0c25691fb3647977a644ad9ecc4f7c52f6cb33e891472aad37033e40ecc",
+          "linkedWithoutMetadata": "de02d0c25691fb3647977a644ad9ecc4f7c52f6cb33e891472aad37033e40ecc"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "store(uint256)",
+          "retrieve()",
+          "increment()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "BoxV2",
+              "label": "value",
+              "type": "t_uint256",
+              "src": "contracts/boxv2.sol:6"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      }
+    },
+    {
+      "Box": {
+        "src": "contracts/box.sol:5",
+        "version": {
+          "withMetadata": "63cdac1fa0caceef9645cc16ea5b37954bd8bcfc017be82093d91291810adfc8",
+          "withoutMetadata": "cba9f8cf52e3c449631a04ea218a6cedcaf7c366669cfc257c89a008266c768f",
+          "linkedWithoutMetadata": "cba9f8cf52e3c449631a04ea218a6cedcaf7c366669cfc257c89a008266c768f"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "store(uint256)",
+          "retrieve()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Box",
+              "label": "value",
+              "type": "t_uint256",
+              "src": "contracts/box.sol:6"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      }
+    },
+    {
+      "Ownable": {
+        "src": "@openzeppelin/contracts/access/Ownable.sol:20",
+        "inherit": [
+          "Context"
+        ],
+        "libraries": [],
+        "methods": [
+          "owner()",
+          "renounceOwnership()",
+          "transferOwnership(address)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "Ownable",
+            "src": "@openzeppelin/contracts/access/Ownable.sol:28"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Ownable",
+              "label": "_owner",
+              "type": "t_address",
+              "src": "@openzeppelin/contracts/access/Ownable.sol:21"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "Context": {
+        "src": "@openzeppelin/contracts/utils/Context.sol:16",
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "Box": {
+        "src": "contracts/box.sol:9",
+        "version": {
+          "withMetadata": "9b43e4ad1346143682b670d57863ec462ee44f446cf4a8cbfb25a9bc05d65954",
+          "withoutMetadata": "793984c1ec90876c8097da5548882fbc71ccafc6ce17f0605ff30b7251bcdb55",
+          "linkedWithoutMetadata": "793984c1ec90876c8097da5548882fbc71ccafc6ce17f0605ff30b7251bcdb55"
+        },
+        "inherit": [
+          "Ownable",
+          "Context"
+        ],
+        "libraries": [],
+        "methods": [
+          "store(uint256)",
+          "retrieve()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Box",
+              "label": "_value",
+              "type": "t_uint256",
+              "src": "contracts/box.sol:10"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      }
+    },
+    {
+      "Auth": {
+        "src": "contracts/access-control/auth.sol:5",
+        "version": {
+          "withMetadata": "1c7cfdeaae7ecc8780df5f5d9ad402993de48c5ffea07e9db9459b959c9f52dd",
+          "withoutMetadata": "baeb829d8ff3127d01145cc514e8d9fa68a92498bcc8ae24673f598c0a347e00",
+          "linkedWithoutMetadata": "baeb829d8ff3127d01145cc514e8d9fa68a92498bcc8ae24673f598c0a347e00"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "(address)",
+          "isAdministrator(address)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "Auth",
+            "src": "contracts/access-control/auth.sol:8"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Auth",
+              "label": "_administrator",
+              "type": "t_address",
+              "src": "contracts/access-control/auth.sol:6"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "Box": {
+        "src": "contracts/box.sol:8",
+        "version": {
+          "withMetadata": "a8f88fbdb330bda5dcaebb3863c347887cec195f68f5b8933d17a644a2b4c789",
+          "withoutMetadata": "36a5688d0fde16f53af548089aa9ed3e0e313ff4f0f9959f6f8ce5399a44f817",
+          "linkedWithoutMetadata": "36a5688d0fde16f53af548089aa9ed3e0e313ff4f0f9959f6f8ce5399a44f817"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "()",
+          "store(uint256)",
+          "retrieve()"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "Box",
+            "src": "contracts/box.sol:14"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Box",
+              "label": "_value",
+              "type": "t_uint256",
+              "src": "contracts/box.sol:9"
+            },
+            {
+              "contract": "Box",
+              "label": "_auth",
+              "type": "t_contract(Auth)26",
+              "src": "contracts/box.sol:10"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256"
+            },
+            "t_contract(Auth)26": {
+              "label": "contract Auth"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      }
+    },
+    {
+      "Box": {
+        "src": "contracts/box.sol:5",
+        "version": {
+          "withMetadata": "65c9d5fa6b29918e3ba9acdb815259843da7f896938f4ee4eb83a2eca87cd40d",
+          "withoutMetadata": "cba9f8cf52e3c449631a04ea218a6cedcaf7c366669cfc257c89a008266c768f",
+          "linkedWithoutMetadata": "cba9f8cf52e3c449631a04ea218a6cedcaf7c366669cfc257c89a008266c768f"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "store(uint256)",
+          "retrieve()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Box",
+              "label": "_value",
+              "type": "t_uint256",
+              "src": "contracts/box.sol:6"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      }
+    },
+    {
+      "Box": {
+        "src": "contracts/box.sol:5",
+        "version": {
+          "withMetadata": "d76dd848311f3eadca0303379a8ae4aa6bfdc59993a93cfc0ee6abdfe1a0664b",
+          "withoutMetadata": "cba9f8cf52e3c449631a04ea218a6cedcaf7c366669cfc257c89a008266c768f",
+          "linkedWithoutMetadata": "cba9f8cf52e3c449631a04ea218a6cedcaf7c366669cfc257c89a008266c768f"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "store(uint256)",
+          "retrieve()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Box",
+              "label": "_value",
+              "type": "t_uint256",
+              "src": "contracts/box.sol:6"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      }
+    }
+  ]
+}

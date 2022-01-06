@@ -1,0 +1,5 @@
+remix.log
+secrets.json
+artifacts/
+contracts/artifacts
+node_modules/
